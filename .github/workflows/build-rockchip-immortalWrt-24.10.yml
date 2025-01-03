@@ -50,11 +50,11 @@ on:
           ,xunlong_orangepi-r1-plus
           ,xunlong_orangepi-r1-plus-lts  
         required: true
-        default: 'friendlyarm_nanopi-r3s'
+        default: 'lunzn_fastrhino-r66s'
       rootfs_partsize:
         description: '设置软件包大小 单位(MB)'
         required: true
-        default: '1024'
+        default: '2048'
 
 jobs:
   build:
