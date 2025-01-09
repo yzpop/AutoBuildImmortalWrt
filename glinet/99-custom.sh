@@ -24,7 +24,7 @@ if [ "$count" -eq 1 ]; then
    uci set network.lan.proto='dhcp'
 elif [ "$count" -gt 1 ]; then
    # 多网口设备
-   uci set network.lan.ipaddr='192.168.8.1'
+   uci set network.lan.ipaddr='192.168.88.253'
    # 判断是否启用 PPPoE
    if [[ "$ENABLE_PPPOE" == "yes" ]]; then
       echo "PPPoE is enabled."
@@ -49,7 +49,7 @@ uci commit
 
 # 设置编译作者信息
 FILE_PATH="/etc/openwrt_release"
-NEW_DESCRIPTION="Compiled by wukongdaily"
+NEW_DESCRIPTION="Compiled by MQDS"
 sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'/" "$FILE_PATH"
 
 exit 0
