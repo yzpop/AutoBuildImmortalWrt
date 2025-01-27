@@ -71,6 +71,8 @@ on:
       pppoe_password:
         description: "宽带密码 (若启用PPPoE)"
         required: false
+  schedule:
+    - cron: '0 */23 * * *'  # 每23小时执行一次
 
 jobs:
   build:
@@ -115,6 +117,7 @@ jobs:
               -e PPPOE_PASSWORD=${{ inputs.pppoe_password }} \
               immortalwrt/imagebuilder:rockchip-armv8-openwrt-24.10.0-rc4 /bin/bash /home/build/immortalwrt/build.sh
           done
+
       - name: Generate Firmware SHA-256
         run: |
           cp ${{ github.workspace }}/bin/targets/rockchip/armv8/*.img.gz ${{ github.workspace }}
