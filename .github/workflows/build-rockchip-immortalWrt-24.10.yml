@@ -71,8 +71,8 @@ on:
       pppoe_password:
         description: "宽带密码 (若启用PPPoE)"
         required: false
-  schedule:
-    - cron: '0 */23 * * *'  # 每23小时执行一次
+#  schedule:
+#    - cron: '0 */23 * * *'  # 每23小时执行一次
 
 jobs:
   build:
