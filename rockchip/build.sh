@@ -43,8 +43,8 @@ PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
 # 增加 sing-box 等软件
 PACKAGES="$PACKAGES nano"
 PACKAGES="$PACKAGES sing-box"
-PACKAGES="$PACKAGES kmod-nft-socket"
-PACKAGES="$PACKAGES kmod-nft-tproxy"
+# PACKAGES="$PACKAGES kmod-nft-socket"
+# PACKAGES="$PACKAGES kmod-nft-tproxy"
 PACKAGES="$PACKAGES docker-compose"
 # 增加几个必备组件 方便用户安装iStore
 PACKAGES="$PACKAGES fdisk"
