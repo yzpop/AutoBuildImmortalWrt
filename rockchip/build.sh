@@ -35,6 +35,7 @@ PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
 # 增加 sing-box 等软件
 PACKAGES="$PACKAGES nano"
+PACKAGES="$PACKAGES luci-i18n-arpbind-zh-cn"
 PACKAGES="$PACKAGES sing-box"
 PACKAGES="$PACKAGES geoview"
 PACKAGES="$PACKAGES kmod-nft-socket"
