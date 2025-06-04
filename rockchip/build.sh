@@ -33,6 +33,7 @@ PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
+PACKAGES="$PACKAGES luci-i18n-wol-zh-cn"
 # 增加 sing-box 等软件
 PACKAGES="$PACKAGES nano"
 PACKAGES="$PACKAGES luci-i18n-arpbind-zh-cn"
